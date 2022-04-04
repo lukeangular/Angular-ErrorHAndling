@@ -1,0 +1,13 @@
+
+<div class="container p-5">
+    <div class="alert alert-warning" role="alert" *ngIf="errorMessage">
+        {{errorMessage}}
+    </div>
+    <br>
+    <div class="card p-3 m-1" *ngFor="let api_data of data">
+        <p>{{api_data.id}}</p>
+        <p>{{api_data.name}}</p>
+        <p>{{api_data.email}}</p>
+        <p>{{api_data.gender}}</p>
+    </div>
+</div>
